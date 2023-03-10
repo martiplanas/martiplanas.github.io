@@ -1,2 +1,5 @@
 # martiplanas.github.io
-##Testing 2
+## Coses que hem de fer
+
+- [ ] Fer home
+    * 
