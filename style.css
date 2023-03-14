@@ -2,6 +2,8 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   background: black;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .selected{
@@ -229,9 +231,47 @@ h4{
 }
 
 .conten2t{
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: url(https://i.ytimg.com/vi/5nnW5g65gLs/maxresdefault.jpg) ;
   filter: blur(13px)  brightness(60%);
   background-position: center;
+}
+
+.contentB{
+  width: 75%;
+  background-color: red;
+  margin: auto;
+}
+
+.Blogh3{
+  
+}
+
+.Blogp{
+  color: white;
+}
+
+.album-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.hflex{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.blogvflex{
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.featuredBlog{
+  width: 100%;
+  margin: 10px;
+  background-color: orange;
 }
