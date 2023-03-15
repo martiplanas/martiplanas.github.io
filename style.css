@@ -240,7 +240,7 @@ h4{
 
 .contentB{
   width: 75%;
-  background-color: red;
+  background-color: rgb(59, 59, 59);
   margin: auto;
 }
 
@@ -274,4 +274,8 @@ h4{
   width: 100%;
   margin: 10px;
   background-color: orange;
+}
+
+img{
+  max-width: 200px;
 }
