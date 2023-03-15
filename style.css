@@ -242,10 +242,15 @@ h4{
   width: 75%;
   background-color: rgb(59, 59, 59);
   margin: auto;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.Blogh3{
-  
+.blogContent{
+  background-color: rgb(87, 87, 87);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .Blogp{
