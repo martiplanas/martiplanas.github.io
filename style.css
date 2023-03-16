@@ -280,5 +280,6 @@ h4{
 }
 
 img{
-  max-width: 200px;
+  object-fit: cover;
+  max-height: 200px;
 }
