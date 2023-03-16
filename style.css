@@ -1,3 +1,5 @@
+/* Styles for desktop screens */
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   background: black;
@@ -302,4 +304,19 @@ h3{
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+}
+
+/* Styles for tablets */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* Other styles... */
+  }
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 50rem;
+  }
 }
