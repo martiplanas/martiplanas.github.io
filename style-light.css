@@ -109,59 +109,7 @@ h1{
   margin: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-  }
 
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
-  }
-
-  .navbar-container {
-    flex-wrap: wrap;
-  }
-
-  .dropdown {
-    display: block;
-  }
-
-  .burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
-
-  .navbar-links {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .navbar-links a {
-    margin: 10px 0;
-  }
-
-  .show {
-    display: block;
-  }
-
-  nav {
-    height: auto;
-  }
-}
 
 .menu-icon {
   display: block;
@@ -239,14 +187,6 @@ h4{
   margin: auto;
 }
 
-.conten2t{
-  height: 100%;
-  width: 100%;
-  /*background: url(https://i.ytimg.com/vi/5nnW5g65gLs/maxresdefault.jpg) ;
-  filter: blur(13px)  brightness(60%);*/
-  background-position: center;
-}
-
 .contentB{
   width: 90%;
   margin: auto;
@@ -301,17 +241,56 @@ img{
   margin: 5px;
 }
 
-/* Styles for tablets */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 40px;
-    /* Other styles... */
+  @media only screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 30px;
+      width: 30px;
+      margin-right: 20px;
+    }
+  
+    .navbar-container {
+      flex-wrap: wrap;
+    }
+  
+    .dropdown {
+      display: block;
+    }
+  
+    .burger-menu div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .navbar-links a {
+      margin: 10px 0;
+    }
+  
+    .show {
+      display: block;
+    }
+  
+    nav {
+      height: auto;
+    }
   }
-}
-
-/* Styles for mobile devices */
-@media screen and (max-width: 480px) {
-  body{
-    font-size: 0rem;
-  }
-}
