@@ -1,3 +1,7 @@
+import '@material/web/button/filled-button.js';
+import '@material/web/button/outlined-button.js';
+import '@material/web/checkbox/checkbox.js';
+
 const burgerMenu = document.querySelector('.burger-menu');
 const navbarLinks = document.querySelector('.navbar-links');
 

@@ -1,9 +1,12 @@
 /* Styles for desktop screens */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600;800;900&display=swap');
+
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  background: black;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background: #1D1C16;
   margin: 0;
+  color: #C1BDB5;
 }
 
 .selected{
@@ -11,7 +14,7 @@ body{
 }
 
 nav {
-  background-color: #5a4f1af5;
+  background-color: #4A4739;
   position: sticky;
   top: 0;
   padding: 15px;
@@ -30,11 +33,11 @@ nav {
 .logo {
   display: flex;
   justify-content: center;
-  color: white;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   height: 100%;
+  color: #C1BDB5;
 }
 
 .flag{
@@ -48,6 +51,7 @@ h1{
   display: inline-block;
   margin: 0;
   margin-left: 30px;
+  font-weight: 400;
 }
 
 .navbar-links {
@@ -170,7 +174,7 @@ h1{
   display: block;
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: #C1BDB5;
   margin-bottom: 5px;
 }
 
@@ -179,8 +183,14 @@ h1{
 }
 
 h2{
-  color: white;
-  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: -50px;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 1000;
 }
 
 header{
@@ -191,7 +201,11 @@ header{
 /*CSS ALBUMS*/
 
 h3{
-  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
 }
 
 .albums-box{
@@ -205,7 +219,6 @@ h3{
   border-radius: 15px;
   padding: 10px;
   border: 1px solid white;
-  color: white;
 }
 
 .album-img{
@@ -213,10 +226,6 @@ h3{
   object-fit: cover;
   max-width: 100%;
   aspect-ratio: 1/1;
-}
-
-h3{
-  font-size: 1.5rem;
 }
 
 h4{
@@ -240,23 +249,25 @@ h4{
 
 .contentB{
   width: 90%;
-  background-color: rgb(59, 59, 59);
   margin: auto;
-  padding: 20px;
+  padding: 0px;
   border-radius: 20px;
+  color: #C1BDB5;
+}
+
+.coments{
+  background-color: #145134;
+  border-radius: 0 0 20px 20px;
+  padding: 15px;
+  margin-bottom: 25px;
+  color: #B3F0C9;
 }
 
 .blogContent{
-  background-color: rgb(87, 87, 87);
+  background-color: #4A4739;
   padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  /*display: flex;
-  flex-wrap: wrap;*/
-}
-
-.Blogp{
-  color: white;
+  margin-bottom: 5px;
+  border-radius: 20px 20px 0 0 ;
 }
 
 .album-images{
@@ -288,12 +299,6 @@ img{
   max-height: 250px;
   border-radius: 5px;
   margin: 5px;
-}
-
-h3{
-  text-indent: 10px;
-  font-weight: 700;
-  font-size: 2rem;
 }
 
 /* Styles for tablets */
