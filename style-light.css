@@ -188,7 +188,9 @@ h4{
 }
 
 .contentB{
-  width: 90%;
+  width: 60vw;
+  max-width: 95%;
+  min-width: 1000px;
   margin: auto;
   padding: 0px;
   border-radius: 20px;
@@ -233,6 +235,48 @@ h4{
   margin: 10px;
   font-size: 1rem;
   /*background-color: orange;*/
+}
+
+.recomendation{
+  background-color: #B3F0C9;
+  padding: 15px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-index{
+  width: 60vw;
+  max-width: 95%;
+  min-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reco-text{
+  margin: 10px ;
+}
+
+.button{
+  background-color: #6C5E00;
+  border-radius: 100px;
+  color: #FFFFFF;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  border: none;
+  margin: 20px auto 10px auto;
+  cursor: pointer;
+}
+
+.ano{
+  cursor:default;
+  margin: auto;
 }
 
 img{
