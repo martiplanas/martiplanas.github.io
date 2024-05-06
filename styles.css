@@ -58,6 +58,8 @@ a:active {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 .link {
@@ -67,5 +69,5 @@ a:active {
     align-items: center;
     width: 30vw;
     height: 20vh;
-    background-color: #000;
+    background-color: #2d2d2d;
 }
