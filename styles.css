@@ -116,6 +116,38 @@
         line-height: 1.5;
         font-size: 1rem;
     }
+    .pro{
+        padding: 10px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 500px;
+    }
+    .proj{
+        background-color: var(--color-gray-5);
+        border-radius: 20px;
+        padding: 0;
+    }
+    .proj img{
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .proj .text{
+        margin: 12px 10px 0 10px;
+        display: grid;
+        grid-template-rows: 20% 65% 15%;
+    }
+    .proj button{
+        border: 0;
+        border-radius: 10px;
+        height: 100%;
+        margin-left: 80px;
+        background-color: var(--color-blue);
+    }
 }
 
 /* Styles for phones */
@@ -143,7 +175,40 @@
         line-height: 1.5;
         font-size: 1.o8rem;
     }
+    .pro{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80vh 80vh 80vh 80vh 80vh 80vh;
+        gap: 20px;
+    }
+    .proj{
+        background-color: var(--color-gray-5);
+        border-radius: 20px;
+        padding: 0;
+        
+    }
+    .proj img{
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .proj .text{
+        margin: 12px 10px 0 10px;
+        display: grid;
+        grid-template-rows: 20% 65% 15%;
+    }
+    .proj button{
+        border: 0;
+        border-radius: 10px;
+        height: 100%;
+        margin-left: 80px;
+        background-color: var(--color-blue);
+    }
 }
+
 
 .headerbox{
     position: fixed;
@@ -178,9 +243,7 @@
     width: 100%;
     margin: auto;
 }
-.amc{
 
-}
 .abm{
     width: auto;
     border-radius: 5px;
