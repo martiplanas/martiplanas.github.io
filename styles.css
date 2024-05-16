@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     /* Light mode */
     --color-light-gray-1: rgb(142, 142, 147);
@@ -53,7 +55,10 @@
       --color-red: var(--color-light-red);
       --color-teal: var(--color-light-teal);
       --color-yellow: var(--color-light-yellow);
-      --color-text: var(--color-dark-gray-6);
+      --color-text: rgb(10,10,10);
+      --color-backgroud: rgb(249,249,249);
+      --color-header: rgba(249,249,249, 0.8);
+      --color-header-swadow: rgba(249,249,249,0.4);
     }
   }
   
@@ -74,79 +79,63 @@
       --color-red: var(--color-dark-red);
       --color-teal: var(--color-dark-teal);
       --color-yellow: var(--color-dark-yellow);
-      --color-text: var(--color-light-gray-6);
+      --color-text: rgb(249,294,249);
+      --color-backgroud: rgb(10,10,10);
+      --color-header: rgba(10,10,10,0.8);
+      --color-header-swadow: rgba(10,10,10,0.4);
     }
   }
 
 /* Styles for desktop */
 @media (min-width: 768px) {
-    .header {
-        /*Text stuff*/
-        color: var(--color-text);
-        text-align: center;
-        
-        padding: 10px;
+    .headerbox{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        background-color: var(--color-header);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(20px);
+        z-index: 1000;
+        box-shadow: 0px 0px 125px var(--color-header-swadow);
+    }
 
-        border: var(--color-gray-2) 2px solid;
-        border-radius: 20px;
-        margin: 20px;
-        box-shadow: #00000030 0px 5px 75px;
-        background-color: var(--color-gray-5);
+    .headerbox h1{
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 1.4em;
+        font-style: normal;
+        margin: 0;
+        color: var(--color-text);
+    }
+    .headercontent{
+        max-width: 900px;
+        margin: auto;
     }
     .content{
-        width: 100vw;
         display: grid;
         grid-template-columns: auto auto;
+        padding: 20px;
+        padding-top: 80px;
     }
 }
 
 /* Styles for phones */
 @media (max-width: 767px) {
-    body {
-        background-color: lightgreen;
-    }
+
 }
 
-body{
-    background-color: var(--color-gray-6);
+body,html{
+    background-color: var(--color-backgroud);
+    color: var(--color-text);
 }
-
-/*.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(var(--blur));
-    padding: 20px;
-    margin: 20px;
-    max-width: 800px;
-    width: 100%;
-}*/
 
 body {
     font-family: Arial, sans-serif;
     color: var(--text);
     margin: 0;
     padding: 0;
-    width: 100vw;
-}
-
-
-.link {
-    text-decoration: none;
-    color: white;
-}
-
-a:visited {
-    color: white;
-}
-
-a:hover {
-    color: purple;
-}
-
-a:active {
-    color: white;
 }
 
 .linkdiv {
