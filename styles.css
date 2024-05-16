@@ -145,8 +145,13 @@
         border: 0;
         border-radius: 10px;
         height: 100%;
-        margin-left: 80px;
         background-color: var(--color-blue);
+    }
+    .proj a{
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        margin-left: 80px;
     }
 }
 
@@ -200,7 +205,7 @@
         display: grid;
         grid-template-rows: 20% 65% 15%;
     }
-    .proj button{
+    .proj a{
         border: 0;
         border-radius: 10px;
         height: 100%;
