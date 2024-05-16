@@ -120,7 +120,29 @@
 
 /* Styles for phones */
 @media (max-width: 767px) {
-
+    .headercontent{
+        max-width: 100%;
+    }
+    .port{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .amc{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .amc img{
+        min-width: 250px;
+        max-width: 250px;
+    }
+    .amc p{
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 1.o8rem;
+    }
 }
 
 .headerbox{
@@ -145,7 +167,6 @@
     color: var(--color-text);
 }
 .headercontent{
-    max-width: 950px;
     margin: auto;
 }
 .content{
@@ -154,21 +175,13 @@
 }
 .port{
     color: var(--color-text);
-    min-width: 700px;
-    max-width: 850px;
     width: 100%;
     margin: auto;
 }
 .amc{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    align-items: center;
+
 }
 .abm{
-    min-width: 250px;
-    max-width: 400px;
     width: auto;
     border-radius: 5px;
     box-shadow: 0px 0px 125px var(--color-header-swadow);
@@ -176,9 +189,6 @@
 .amc p{
     margin-left: 20px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 1rem;
 }
 
 body,html{
