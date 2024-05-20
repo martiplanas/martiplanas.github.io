@@ -139,12 +139,21 @@
     .proj .text{
         margin: 12px 10px 0 10px;
         display: grid;
-        grid-template-rows: 20% 65% 15%;
+        grid-template-rows: 20% 65% auto; /* Changed the third row to auto */
+        position: relative; /* Added relative positioning */
     }
-    .proj button{
+    .proj .button-container {
+        position: absolute; /* Positioned absolutely within the project card */
+        bottom: 10px; /* Adjust this value to your preference */
+        left: 10px; /* Adjust this value to your preference */
+        width: calc(100% - 20px); /* Full width minus padding */
+    }
+    
+    .proj button {
         border: 0;
         border-radius: 10px;
         height: 100%;
+        width: 100%; /* Ensure the button takes up the full width */
         background-color: var(--color-blue);
     }
     .proj a{
