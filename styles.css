@@ -80,9 +80,9 @@
       --color-teal: var(--color-dark-teal);
       --color-yellow: var(--color-dark-yellow);
       --color-text: rgb(249,294,249);
-      --color-backgroud: rgb(10,10,10);
-      --color-header: rgba(10,10,10,0.8);
-      --color-header-swadow: rgba(10,10,10,0.4);
+      --color-backgroud: rgb(15,15,15);
+      --color-header: rgba(15,15,15,0.8);
+      --color-header-swadow: rgba(0,0,0,0);
     }
   }
 
@@ -127,6 +127,7 @@
         background-color: var(--color-gray-5);
         border-radius: 20px;
         padding: 0;
+        box-shadow: 0px 0px 125px var(--color-header-swadow);
     }
     .proj img{
         border-radius: 20px 20px 0px 0px;
@@ -144,9 +145,9 @@
     }
     .proj .button-container {
         position: absolute; /* Positioned absolutely within the project card */
-        bottom: 10px; /* Adjust this value to your preference */
-        left: 10px; /* Adjust this value to your preference */
-        width: calc(100% - 20px); /* Full width minus padding */
+        bottom: -18px; /* Adjust this value to your preference */
+        left: -80px; /* Adjust this value to your preference */
+        width: 100%; /* Full width minus padding */
     }
     
     .proj button {
@@ -155,6 +156,7 @@
         height: 100%;
         width: 100%; /* Ensure the button takes up the full width */
         background-color: var(--color-blue);
+        font-size: medium;
     }
     .proj a{
         height: 100%;
@@ -199,7 +201,6 @@
         background-color: var(--color-gray-5);
         border-radius: 20px;
         padding: 0;
-        
     }
     .proj img{
         border-radius: 20px 20px 0px 0px;
