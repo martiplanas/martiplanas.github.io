@@ -248,6 +248,9 @@
 }
 .headercontent{
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .content{
     padding: 20px;
@@ -276,4 +279,18 @@ body,html{
     color: var(--text);
     margin: 0;
     padding: 0;
+}
+
+.github-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.github-logo {
+    width: 30px;
+    height: 30px;
+    background-image: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
