@@ -1,0 +1,24 @@
+.contentimg{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.imgblur{
+    mask: linear-gradient(transparent,gray, black);
+	backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(15, 15, 15, 0.35);
+	height: 200px;
+	width: 100%;
+	overflow: visible;
+	float: left;
+    margin-top: -200px;
+}
+.imgtext{
+    margin-top: 125px;
+    margin-left: 25px;
+    color: white;
+    font-size: 1.5rem;
+}
+a{
+    display: inline;
+}
