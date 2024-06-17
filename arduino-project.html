@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="arduino-project.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ESP32 Weather Project</title>
 </head>
 <body>
     <div class="headerbox">
@@ -27,8 +28,37 @@
                 <div class="imgtext">
                     <h2>ESP32 Weather Arduino Displayer</h2>
                 </div>
+                <div class="codebutton">
+                    <a href="https://github.com/martiplanas/Weather-Arduino-ESP32">
+                        <button>            
+                            <span class="material-icons">code</span>
+                            Open on GitHub
+                        </button>
+                    </a>
+                </div>
             </div>
-            <a href="https://github.com/martiplanas/Weather-Arduino-ESP32"><h2>View the code on GitHub.</h2></a>
+            <div class="article">
+                <p>This project consists of creating an application with an Arduino ESP32 and an 8x8 LED matrix. In my case, I've made a weather display that gets data from the OpenWeather API and shows the weather conditions, temperature and humidity on the display.</p>
+                
+                <h3>Functionalities</h3>
+                <p>The display has 3 pages that change every 5 seconds to show these 3 variables. To simplify the process, I used the OpenWeather library, which makes it easier to make requests to the API and avoid dealing with JSON data.</p>
+
+                <h3>Implementation</h3>
+                <p>The Arduino ESP32 uses the WiFi module to connect to the Internet and get data from the OpenWeather API. The request to the API is made using the "WiFi" and "HTTPClient" libraries. The JSON_Decoder library helps to process the JSON response from the API.</p>
+                
+                <h3>Display UI</h3>
+                <p>The display is too small to show all the information at once, so I created pages. There are three main pages, each with an indicator at the bottom that highlights when the corresponding page is displayed. The first page shows the weather conditions (sun, rain, storm...), the second shows the temperature and the third shows the humidity.</p>
+
+                <h3>Indicators</h3>
+                <p>At the top right, there is an LED indicator that shows whether the WiFi is connected (green) or not (red), helping the user understand why the device is not working.</p>
+
+                <h3>Libraries useds</h3>
+                <ul>
+                    <li>Adafruit_NeoPixel for matrix control.</li>
+                    <li>JSON_Decoder i OpenWeather to simplify the API requests.</li>
+                    <li>WiFi i HTTPClient to connect to internet and be able to do API requests.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
