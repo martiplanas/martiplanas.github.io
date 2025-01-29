@@ -9,8 +9,8 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="headerbox">
-        <div class="headercontent">
+    <div class="header">
+        <div class="header-content">
             <h1>Martí Planas Domenech</h1>
             <div class="github-link">
                 <a href="https://github.com/martiplanas" target="_blank">
@@ -20,38 +20,34 @@
         </div>
     </div>
     <div class="content">
-        <div class="port">
-            <div class="aboutme">
-                <h2>About Me</h2>
-                <div class="amc">
-                    <img class="abm" src="/media/cat1.jpeg" alt="My cat w sexy pose">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem sapien, ullamcorper et aliquet sit amet, scelerisque id nisl. Nullam dignissim interdum neque, et elementum erat mattis sed. Phasellus dignissim arcu odio, id rutrum metus suscipit quis. Duis augue enim, accumsan at ipsum eget, ultricies fermentum ipsum. Phasellus feugiat ante elit, eget dictum lacus mattis eu. Ut sit amet dictum tellus, non consequat eros. Fusce turpis risus, commodo vel eros non, sodales vehicula libero. Duis felis felis, facilisis fringilla ultrices vitae, tincidunt quis erat. Nullam faucibus ultricies diam, eget placerat diam imperdiet vitae. Nunc dapibus sem libero, condimentum molestie dui condimentum at.
-
-                    </p>    
-                </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <div class="amc">
+                <img class="abm" src="/media/cat1.jpeg" alt="My cat w sexy pose">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem sapien, ullamcorper et aliquet sit amet, scelerisque id nisl. Nullam dignissim interdum neque, et elementum erat mattis sed. Phasellus dignissim arcu odio, id rutrum metus suscipit quis. Duis augue enim, accumsan at ipsum eget, ultricies fermentum ipsum. Phasellus feugiat ante elit, eget dictum lacus mattis eu. Ut sit amet dictum tellus, non consequat eros. Fusce turpis risus, commodo vel eros non, sodales vehicula libero. Duis felis felis, facilisis fringilla ultrices vitae, tincidunt quis erat. Nullam faucibus ultricies diam, eget placerat diam imperdiet vitae. Nunc dapibus sem libero, condimentum molestie dui condimentum at.
+                </p>    
             </div>
-            <div class="projects">
-                <h2>Projects</h2>
-                <div class="pro">
-                    <div class="proj">
-                        <img src="/media/proj1.jpeg" alt="">
-                        <div class="text">
-                            <h3>Arduino Weather Displayer</h3>
-                            <p>Using an Arduino ESP32 and a 8x8 LED matrix, this project displays real-time temperature, weather conditions, and humidity from the OpenWeather API</p>
-                            <div class="button-container"> <!-- Added button container -->
-                                <a href="arduino-project.html">
-                                    <button>Learn More</button>
-                                </a>
-                            </div>
-                        </div>
+        </div>
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="card-grid">
+                <div class="card-box">
+                    <div class="card-fused-img-text">
+                        <img src="/media/proj1.jpeg" class="card-img" alt="">
+                        <h3>Arduino Weather Displayer</h3>
                     </div>
+                    <p class="card-text">Using an Arduino ESP32 and a 8x8 LED matrix, this project displays real-time temperature, weather conditions, and humidity from the OpenWeather API</p>
+                    <a class="card-button" href="arduino-project.html">
+                        <button>Learn More</button>
+                    </a>
                 </div>
             </div>
-            <div class="contactme">
-                <h2>Contact me!</h2>
-                <div class="mailbox">
-                    <p>martipldo@icloud.com</p>
-                </div>
+        </div>
+        <div class="section">
+            <h2>Contact me!</h2>
+            <div class="mailbox">
+                <p>martipldo@icloud.com</p>
             </div>
         </div>
     </div>
