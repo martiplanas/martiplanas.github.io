@@ -166,7 +166,7 @@ body,html{
     width: 100%;
     padding: 15px;
     background-color: var(--color-header);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
     box-shadow: 0px 0px 125px var(--color-header-swadow);
@@ -226,16 +226,18 @@ body,html{
 .card-grid{
     display: grid;
 
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     gap: 20px;
 }
 
 .card-box{
     background-color: var(--color-gray-4);
-    max-width: 250px;
     padding: 0;
     border-radius: 20px;
+    width: auto;
+    height: 500px;
+    max-width: 300px;
 }
 
 .card-img{
@@ -250,21 +252,24 @@ body,html{
     display: grid;
 }
 
-.card-fused-img-text img{/*
-    mask: linear-gradient(transparent,gray, black);
-	backdrop-filter: blur(8px);
+.card-fused-img-text img{
+    grid-area: 1/1;
+}
+
+.card-blur{
+    mask: linear-gradient(transparent,rgba(10,10,10,0.2),rgba(10,10,10,0.7),black,black);
+	backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    background-color: rgba(15, 15, 15, 0.35);
-	height: 200px;
-	width: 100%;
-	overflow: visible;
-	float: left;
-    margin-top: -100px;
-    display: flex;*/
+    background-color: rgba(15, 15, 15, 0.7);
+	height: 125px;
+    margin-top: 175px;
+    grid-area: 1/1;
 }
 
 .card-fused-img-text h3{
-
+    
+    margin-top: 75px;
+    padding: 15px;
 }
 
 .card-text{
@@ -273,10 +278,11 @@ body,html{
 
 .card-button{
     width: 100%;
+    margin: 10px;
 }
 
 .card-button button{
-    width: 100%;
+    
     border-radius: 5px;
     min-height: 40px;
 }
@@ -296,54 +302,6 @@ body,html{
     font-weight: 400;
     line-height: 1.5;
     font-size: 1rem;
-}
-.pro{
-    padding: 10px;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 500px;
-}
-.proj{
-    background-color: var(--color-gray-5);
-    border-radius: 20px;
-    padding: 0;
-    box-shadow: 0px 0px 125px var(--color-header-swadow);
-}
-.proj img{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: center center;
-}
-.proj .text{
-    margin: 12px 10px 0 10px;
-    display: grid;
-    grid-template-rows: 20% 65% auto; /* Changed the third row to auto */
-    position: relative; /* Added relative positioning */
-}
-.proj .button-container {
-    position: absolute; /* Positioned absolutely within the project card */
-    bottom: -18px; /* Adjust this value to your preference */
-    left: -80px; /* Adjust this value to your preference */
-    width: 100%; /* Full width minus padding */
-}
-
-.proj button {
-    border: 0;
-    border-radius: 10px;
-    height: 100%;
-    width: 100%; /* Ensure the button takes up the full width */
-    background-color: var(--color-blue);
-    font-size: medium;
-}
-.proj a{
-    height: 100%;
-    margin: 0;
-    width: 100%;
-    margin-left: 80px;
 }
 
 
